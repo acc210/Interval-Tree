@@ -163,12 +163,6 @@ public class IntervalTree {
 				}
 			}
 		}
-
-		// COMPLETE THIS METHOD
-		// THE FOLLOWING LINE HAS BEEN ADDED TO MAKE THE PROGRAM COMPILE
-		//		System.out.println("points");
-		//		printP(points);
-
 		return points;
 	}
 
@@ -195,8 +189,6 @@ public class IntervalTree {
 			T.leftIntervals = new ArrayList<Interval>();
 			T.rightIntervals = new ArrayList<Interval>();
 			Q.enqueue(T);
-			//print each node made
-//			System.out.println("First Node: " + T);
 		}
 
 
@@ -209,10 +201,6 @@ public class IntervalTree {
 			}
 			stepSix(Q);
 		}
-
-		// COMPLETE THIS METHOD
-		// THE FOLLOWING LINE HAS BEEN ADDED TO MAKE THE PROGRAM COMPILE
-
 
 		return T;
 	}
@@ -231,7 +219,6 @@ public class IntervalTree {
 			N.rightChild= T2;
 			N.leftIntervals = new ArrayList<Interval>();
 			N.rightIntervals = new ArrayList<Interval>();
-//			System.out.println("the Node: " + N);
 			Q.enqueue(N);
 			temps= temps-2;
 		}
@@ -240,9 +227,7 @@ public class IntervalTree {
 			IntervalTreeNode temp = Q.dequeue();
 			Q.enqueue(temp);
 		}
-		
-		//return the queue
-		return Q;
+				return Q;
 	}
 
 	/**
@@ -297,10 +282,6 @@ public class IntervalTree {
 				}
 			}
 		}
-
-		//	printTree(this.root);
-
-		// COMPLETE THIS METHOD
 	}
 
 	//adds intervals to the tree
@@ -332,29 +313,6 @@ public class IntervalTree {
 		}
 	}
 
-	/*
-	private void printTree(IntervalTreeNode tree){
-
-		IntervalTreeNode current = root;
-		IntervalTreeNode left = current.leftChild;
-		IntervalTreeNode right = current.rightChild;
-		boolean flag=true;
-
-
-		while(right!= null){
-			System.out.println("intervals "+ current.leftIntervals);
-			current= current.rightChild;
-		}
-
-
-//			System.out.println("intervals "+ current.leftIntervals);
-//			current= current.rightChild;
-//		
-//			System.out.println("intervals "+ current.leftIntervals);
-//			current= current.leftChild;
-
-	}
-	 */ 
 
 	/**
 	 * Gets all intervals in this interval tree that intersect with a given interval.
@@ -433,18 +391,4 @@ public class IntervalTree {
 		return ResultList;
 
 	}
-
-
-	//	private static void print(ArrayList <Interval>intervals) {
-	//		for (Interval ls: intervals) {
-	//			System.out.println(ls);
-	//		}
-	//	}
-	//
-	//	private static void printP(ArrayList <Integer>points) {
-	//		for (Integer in: points) {
-	//			System.out.println(in);
-	//		}
-	//	}
-
 }

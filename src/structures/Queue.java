@@ -5,7 +5,6 @@ import java.util.NoSuchElementException;
 /**
  * This class implements a generic FIFO queue.
  * 
- * @author runb-cs112
  *
  */
 public class Queue<T> {

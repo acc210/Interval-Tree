@@ -5,7 +5,6 @@ import java.util.ArrayList;
 /**
  * Encapsulates a node of the interval tree. 
  * 
- * @author runb-cs112
  */
 public class IntervalTreeNode {
 	

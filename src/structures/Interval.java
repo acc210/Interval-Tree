@@ -4,7 +4,6 @@ package structures;
  * Encapsulates an interval whose end points are integers. Each interval can contain an additional
  * string that provides information about that interval that may be useful for an application.
  * 
- * @author runb-cs112
  */
 public class Interval {
 	
